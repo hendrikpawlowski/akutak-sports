@@ -1,0 +1,22 @@
+{
+  "name": "akutak-sports",
+  "version": "1.0.0",
+  "description": "Hi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hendrikpawlowski/akutak-sports.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hendrikpawlowski/akutak-sports/issues"
+  },
+  "homepage": "https://github.com/hendrikpawlowski/akutak-sports#readme",
+  "devDependencies": {
+    "tailwind": "^4.0.0"
+  }
+}
