@@ -9,6 +9,10 @@
 
     <link rel="stylesheet" href="./dist/style.css">
     <link rel="stylesheet" href="./dist/aos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body class="h-full bg-gray-900">
@@ -152,12 +156,11 @@
                 <h2 data-aos="zoom-in" data-aos-duration="1000"
                     class="inline relative text-4xl leading-8 font-extrabold tracking-tight text-gray-900">
                     <span>Anleitung</span>
-                    <span class="absolute top-1/2 -translate-y-1/2 -left-12">
+                    <span class="hidden absolute xl:block top-1/2 -translate-y-1/2 -left-12">
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="1" width="24" height="24" rx="4" stroke="black" stroke-width="2" />
                             <circle cx="13" cy="13" r="2" fill="black" />
                         </svg>
-
                     </span>
                 </h2>
                 <div data-aos="fade-in" data-aos-duration="1000" class="mt-12">
@@ -213,7 +216,7 @@
                 <h2 data-aos="fade-in" data-aos-duration="1000"
                     class="relative text-4xl leading-8 font-extrabold tracking-tight text-gray-900">
                     <span>Highscores</span>
-                    <span class="absolute top-1/2 -translate-y-1/2 -left-12">
+                    <span class="hidden absolute xl:block top-1/2 -translate-y-1/2 -left-12">
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="1" width="24" height="24" rx="4" stroke="black" stroke-width="2" />
                             <circle cx="7" cy="19" r="2" fill="black" />
@@ -221,39 +224,88 @@
                         </svg>
                     </span>
                 </h2>
-                <p data-aos="fade-in" data-aos-duration="1000" class="mt-8 text-xl text-gray-500 leading-8 max-w-3xl">
-                    Lorem, ipsum dolor sit amet consectetur
-                    adipisicing
-                    elit.
-                    Nostrum iusto odio at dolore reiciendis fugiat fugit vitae tempore quo facere in deserunt,
-                    excepturi,
-                    eaque ipsa, rem dolorem quis similique maxime? Quo tempora in minima fuga sed dolor ullam quae amet
-                    eum
-                    fugiat odio numquam magnam doloremque porro ab tempore, voluptatem natus quos, nostrum nisi vitae
-                    repudiandae ipsam. At distinctio id vel aliquam eos delectus temporibus! Saepe tempore iure aut
-                    explicabo blanditiis vero debitis! Ratione sequi quo quod excepturi, aliquid enim, ullam ipsam velit
-                    voluptatum esse facere commodi consequatur autem beatae voluptate, labore rerum quos libero
-                    quibusdam
-                    culpa. Eveniet deleniti, perferendis asperiores error rem nam eos natus deserunt maxime voluptates
-                    eum
-                    tempora tenetur aspernatur debitis, similique iure corrupti saepe voluptas, impedit laborum illo
-                    dignissimos recusandae vero! Recusandae, quaerat, nesciunt, dolorum sed cumque alias consequatur
-                    quam
-                    optio quia fugiat sit! Molestiae vel nam velit itaque sapiente, voluptate nesciunt cupiditate et.
-                    Molestiae atque exercitationem ipsa, eos, error sint ab in facilis laboriosam optio quis dignissimos
-                    quia! Fuga, consequatur repudiandae. Unde perspiciatis quibusdam excepturi error reprehenderit iure
-                    commodi voluptates tempora quaerat obcaecati veritatis dolore, saepe nostrum repudiandae alias!
-                    Quas,
-                    iure incidunt. Maiores ipsam, soluta reiciendis aperiam quas laudantium aliquid dolores suscipit,
-                    beatae, possimus quidem!
-                </p>
+                <div data-aos="fade-in" data-aos-duration="1000">
+                    <p class="mt-12 text-xl text-gray-500 leading-8 max-w-3xl">
+                        Lorem, ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit.
+                        commodi voluptates tempora quaerat obcaecati veritatis dolore, saepe nostrum repudiandae alias!
+                        Quas,
+                        iure incidunt. Maiores ipsam, soluta reiciendis aperiam quas laudantium aliquid dolores
+                        suscipit,
+                        beatae, possimus quidem!
+                    </p>
+
+                    <table class="mt-12 rounded-md max-w-xl divide-y overflow-hidden shadow-lg">
+                        <tbody class="divide-gray-200">
+                            <tr class="bg-white">
+                                <td class="bg-amber-200 px-6 py-4 whitespace-nowrap font-bold text-gray-900">
+                                    1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">Jeff Bezos</td>
+                                <td class="font-timer px-6 py-4 whitespace-nowrap text-gray-900">2.06</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">
+                                    2</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">Bill Gates</td>
+                                <td class="font-timer px-6 py-4 whitespace-nowrap text-gray-900">2.50</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">
+                                    3</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">Dwayne The Rock Johnson</td>
+                                <td class="font-timer px-6 py-4 whitespace-nowrap text-gray-900">2.80</td>
+                            </tr>
+
+
+                            <!-- More people... -->
+                        </tbody>
+                    </table>
+
+                    <p class="mt-12 text-xl text-gray-500 leading-8 max-w-3xl">
+                        Lorem, ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit.
+                        Nostrum iusto odio at dolore reiciendis fugiat fugit vitae tempore quo facere in deserunt,
+                        excepturi,
+                        eaque ipsa, rem dolorem quis similique maxime? Quo tempora in minima fuga sed dolor ullam quae
+                        amet
+                        eum
+                        fugiat odio numquam magnam doloremque porro ab tempore, voluptatem natus quos, nostrum nisi
+                        vitae
+                        repudiandae ipsam. At distinctio id vel aliquam eos delectus temporibus! Saepe tempore iure aut
+                        explicabo blanditiis vero debitis! Ratione sequi quo quod excepturi, aliquid enim, ullam ipsam
+                        velit
+                        voluptatum esse facere commodi consequatur autem beatae voluptate, labore rerum quos libero
+                        quibusdam
+                        culpa. Eveniet deleniti, perferendis asperiores error rem nam eos natus deserunt maxime
+                        voluptates
+                        eum
+                        tempora tenetur aspernatur debitis, similique iure corrupti saepe voluptas, impedit laborum illo
+                        dignissimos recusandae vero! Recusandae, quaerat, nesciunt, dolorum sed cumque alias consequatur
+                        quam
+                        optio quia fugiat sit! Molestiae vel nam velit itaque sapiente, voluptate nesciunt cupiditate
+                        et.
+                        Molestiae atque exercitationem ipsa, eos, error sint ab in facilis laboriosam optio quis
+                        dignissimos
+                        quia! Fuga, consequatur repudiandae. Unde perspiciatis quibusdam excepturi error reprehenderit
+                        iure
+                        commodi voluptates tempora quaerat obcaecati veritatis dolore, saepe nostrum repudiandae alias!
+                        Quas,
+                        iure incidunt. Maiores ipsam, soluta reiciendis aperiam quas laudantium aliquid dolores
+                        suscipit,
+                        beatae, possimus quidem!
+                    </p>
+                </div>
+
+
             </div>
 
             <!-- Events -->
             <div data-aos="fade-in" data-aos-duration="1000" class="mt-32 mx-auto px-4 sm:max-w-6xl sm:px-6 lg:px-8">
                 <h2 class="relative text-4xl leading-8 font-extrabold tracking-tight text-gray-900">
                     <span>Events</span>
-                    <span class="absolute top-1/2 -translate-y-1/2 -left-12">
+                    <span class="hidden absolute xl:block top-1/2 -translate-y-1/2 -left-12">
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="1" width="24" height="24" rx="4" stroke="black" stroke-width="2" />
                             <circle cx="7" cy="19" r="2" fill="black" />

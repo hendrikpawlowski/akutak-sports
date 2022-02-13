@@ -4,7 +4,11 @@ module.exports = {
     fontFamily: {
       sans: ['"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial']
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'timer': ['"Roboto Mono"']
+      }
+    },
   },
   plugins: [],
 }
