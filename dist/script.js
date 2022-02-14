@@ -1,5 +1,5 @@
 const init = function () {
-    AOS.init();
+    AOS.init({ once: true });
 }
 
 init();
