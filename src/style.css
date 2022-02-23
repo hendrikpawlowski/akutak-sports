@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.move-up-and-down {
+  animation-name: my-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes my-animation {
+  from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
