@@ -9,12 +9,20 @@
   animation-timing-function: ease-in-out;
 }
 
+.delay-1 {
+  animation-delay: 300ms;
+}
+
+.delay-2 {
+  animation-delay: 600ms;
+}
+
 @keyframes my-animation {
   from {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(6px);
   }
   to {
     transform: translateY(0px);
