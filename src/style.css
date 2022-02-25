@@ -28,3 +28,21 @@
     transform: translateY(0px);
   }
 }
+
+@layer components {
+  .content-block {
+    @apply pt-24 mx-auto px-4 sm:max-w-6xl sm:px-6 md:pt-24 lg:px-8;
+  }
+
+  .heading {
+    @apply mb-6 relative text-4xl leading-8 font-extrabold tracking-tight text-gray-900;
+  }
+
+  .subheading {
+    @apply mt-2 md:mt-8 block text-xl text-cyan-600 font-semibold tracking-wide uppercase;
+  }
+
+  .flow-text {
+    @apply mt-2 text-lg text-gray-500 leading-8 max-w-3xl;
+  }
+}
